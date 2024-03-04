@@ -1,0 +1,340 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Control Académico",
+    "dateExported": "2024-03-04T01:58:01.963Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "72b54439-773c-4b83-909d-8b768dcff053",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-04T01:40:54.162Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "944dea92-0c1d-4524-913d-0f95a8b6e691",
+            "name": "course",
+            "containerId": "",
+            "created": "2024-03-04T01:40:54.163Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "f5642975-6000-4b35-8eff-23e46c4228d6",
+            "name": "assigned",
+            "containerId": "",
+            "created": "2024-03-04T01:40:54.164Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "7850d172-2dca-4d12-a5d3-8d1f4d7ddd8f",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "72b54439-773c-4b83-909d-8b768dcff053",
+            "name": "addU",
+            "url": "user/add",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T01:40:54.162Z",
+            "modified": "2024-03-04T01:50:43.168Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "David"
+                    },
+                    {
+                        "name": "username",
+                        "value": "Dako"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "19ece3cd-7b1d-462c-bc0d-62c3eb534f3e",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "72b54439-773c-4b83-909d-8b768dcff053",
+            "name": "addT",
+            "url": "user/addTeacher",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-04T01:40:54.163Z",
+            "modified": "2024-03-04T01:54:28.216Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "65e529039b25f7577a1a2dc3",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Ceferino"
+                    },
+                    {
+                        "name": "username",
+                        "value": "Cefe"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0d8a49f6-0a07-4a2f-9e22-230240356d70",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "72b54439-773c-4b83-909d-8b768dcff053",
+            "name": "login",
+            "url": "user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-04T01:40:54.164Z",
+            "modified": "2024-03-04T01:54:17.294Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "Dako"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d1b5c6c-ecf3-49d7-b70f-7c1db1d36dd3",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "72b54439-773c-4b83-909d-8b768dcff053",
+            "name": "delete",
+            "url": "user/delete/",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-04T01:40:54.165Z",
+            "modified": "2024-03-04T01:55:26.712Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "validationWord",
+                        "value": "CONFIRM"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "759624c8-16de-41cf-b733-19045a47ccb7",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "72b54439-773c-4b83-909d-8b768dcff053",
+            "name": "update",
+            "url": "user/update/",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-04T01:40:54.166Z",
+            "modified": "2024-03-04T01:55:50.203Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Josue Noj"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "86ea4e56-7e44-45a6-b916-1fd5fb5cbaa7",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "944dea92-0c1d-4524-913d-0f95a8b6e691",
+            "name": "add",
+            "url": "courses/add",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-04T01:40:54.167Z",
+            "modified": "2024-03-04T01:56:32.939Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Progra"
+                    },
+                    {
+                        "name": "description",
+                        "value": "JAVAA"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c0087aad-e855-4a56-9d9a-1a9bf70ccb08",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "944dea92-0c1d-4524-913d-0f95a8b6e691",
+            "name": "update",
+            "url": "courses/update/",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-03-04T01:40:54.168Z",
+            "modified": "2024-03-04T01:56:48.942Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Prograsito"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "803cc5fc-9472-4b96-8a38-c137f7d133a4",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "944dea92-0c1d-4524-913d-0f95a8b6e691",
+            "name": "delete",
+            "url": "courses/delete/",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-04T01:40:54.169Z",
+            "modified": "2024-03-04T01:56:58.083Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "333425eb-4eaa-47a6-bb1a-96676a8bbab7",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "944dea92-0c1d-4524-913d-0f95a8b6e691",
+            "name": "find",
+            "url": "courses/find",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-04T01:40:54.170Z",
+            "modified": "2024-03-04T01:57:04.045Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a9c68540-68df-4012-a348-6ed6ff9cf7c8",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "f5642975-6000-4b35-8eff-23e46c4228d6",
+            "name": "add",
+            "url": "assigned/add",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-03-04T01:40:54.171Z",
+            "modified": "2024-03-04T01:57:38.633Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "course",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e5dce4bd-9aec-44c0-9b5c-2d9181ed98c7",
+            "colId": "38d1e931-fe35-4fc9-a8d5-1334801845a7",
+            "containerId": "f5642975-6000-4b35-8eff-23e46c4228d6",
+            "name": "find",
+            "url": "assigned/find",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-03-04T01:40:54.173Z",
+            "modified": "2024-03-04T01:57:44.425Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2020/"
+        }
+    }
+}
